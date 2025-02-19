@@ -1,0 +1,8 @@
+checks for customers:
+  - duplicate_count(customer_id) = 0
+  - row_count < 100
+  - row_count > 5
+
+checks for orders:
+  - values in (customer_id) must exist in customers (customer_id)
+  - avg(total_amount) < 2000
