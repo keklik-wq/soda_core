@@ -24,3 +24,6 @@
 
 ## Дополнительные ссылки
 * [Список доступных проверок в Soda Core](https://docs.soda.io/soda-cl/metrics-and-checks.html#list-of-sodacl-metrics-and-checks)
+
+## Команды 
+soda scan -V -d dwh -c configuration.yml dwh.yml

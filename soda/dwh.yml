@@ -6,3 +6,6 @@ checks for customers:
 checks for orders:
   - values in (customer_id) must exist in customers (customer_id)
   - avg(total_amount) < 2000
+  - total_amount > 70:
+      total_amount query: |
+        SELECT count(total_amount)  FROM datamart_layer.orders WHERE total_amount > 3000 AND status = 'shipped'
